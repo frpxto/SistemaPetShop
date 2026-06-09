@@ -31,3 +31,4 @@ bin/
 
 /.idea
 *.txt
+!README.md
