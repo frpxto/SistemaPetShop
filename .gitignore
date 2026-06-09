@@ -30,8 +30,8 @@ bin/
 .DS_Store
 
 /.idea
-endereco.txt
-petsCadastrados.txt
-formulario.txt
+/formulario.txt
+/petsCadastrados.txt
+/endereco.txt
 
 !README.md
