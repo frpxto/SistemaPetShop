@@ -1,7 +1,4 @@
-import CadastroPet.CadastramentoPet;
-import CadastroPet.Pet;
-import CadastroPet.TipoPet;
-import MenuInicial.LeituraArquivo;
+import ArmazenamentoPET.CadastramentoPet;
 import MenuInicial.MenuInicial;
 
 

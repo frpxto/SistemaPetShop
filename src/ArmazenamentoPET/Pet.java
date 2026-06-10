@@ -1,4 +1,4 @@
-package CadastroPet;
+package ArmazenamentoPET;
 
 public class Pet {
     private String Nome;

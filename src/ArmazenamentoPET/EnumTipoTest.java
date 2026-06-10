@@ -1,7 +1,4 @@
-package CadastroPet;
-
-import static CadastroPet.TipoPet.CACHORRO;
-import static CadastroPet.TipoPet.GATO;
+package ArmazenamentoPET;
 
 public class EnumTipoTest {
     TipoPet tipoPet;

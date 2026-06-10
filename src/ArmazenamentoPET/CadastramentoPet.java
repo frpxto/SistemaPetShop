@@ -1,16 +1,14 @@
-package CadastroPet;
+package ArmazenamentoPET;
 
 import MenuInicial.LeituraArquivo;
 
-import java.io.IOException;
-import java.nio.file.Path;
+import java.io.FileWriter;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 import java.util.Scanner;
 
-import static CadastroPet.TipoPet.CACHORRO;
-import static CadastroPet.TipoPet.GATO;
 import static java.lang.System.*;
 
 public class CadastramentoPet {
@@ -29,25 +27,27 @@ public class CadastramentoPet {
 
 
             System.out.println(perguntas[0]);
-            String nome = scanner.nextLine();
+            String nome = scanner.nextLine().trim();
             if(nome.isEmpty()){
                 pet.setNome(NAOINFORMADO);
+            }else if(!nome.matches("[\\p{L} ]+")) {
+                out.println("O nome não pode ter caracteres especiais!");
+                return;
             }else{
-                pet.setNome(nome);
+                    pet.setNome(nome);
             }
-            String sobrenome = scanner.nextLine();
 
 
+            String sobrenome = scanner.nextLine().trim();
             if(sobrenome.isEmpty()){
                 pet.setSobrenome(NAOINFORMADO);
+            }else if(!nome.matches("[\\p{L} ]+")) {
+                out.println("O sobrenome não pode ter caracteres especiais!");
+                return;
             }else{
                 pet.setSobrenome(sobrenome);
             }
 
-            if(!nome.matches("[a-z A-Z À-ú]+") || !sobrenome.matches("[a-z A-Z À-ú]+")){
-                out.println("Nome não pode ter números ou caracteres especiais!");
-                return;
-            }
 
 
             System.out.println(perguntas[1]);
@@ -76,7 +76,7 @@ public class CadastramentoPet {
 
 
             //PERGUNTA[3]
-            out.println("Informe seu endereço:");
+            out.println("---Endereço---");
             out.println("Rua: ");
             String rua= scanner.nextLine();
             out.println("Número da casa: ");
@@ -87,7 +87,6 @@ public class CadastramentoPet {
             }else{
                 pet.setRua(numerocasa);
             }
-
             out.println("Cidade : ");
             String cidade = scanner.nextLine();
             Endereco endereco = new Endereco(numerocasa,cidade,rua);
@@ -162,10 +161,28 @@ public class CadastramentoPet {
                 }
                 pet.setRacaPet(raca);
             }
+            LocalDateTime agora = LocalDateTime.now();
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMdd'T'HHmm");
+            String dataagora = agora.format(formatter);
 
+            String NomeArquivo = dataagora + "-" +
+                    pet.getNome().toUpperCase() +
+                    pet.getSobrenome().toUpperCase()+ ".txt" ;
 
-            pets.add(pet);
-            out.println("Seu pet foi cadastrado com sucesso!");
+            FileWriter fw = new FileWriter("PetsCadastrados/" +NomeArquivo);
+
+            fw.write("---Cadastro do Pet --- \n");
+            fw.write("Nome  " +pet.getNome()+ " Sobrenome "+ pet.getSobrenome() +"\n");
+            fw.write("Tipo do pet: " +pet.getTipoPet()+"\n");
+            fw.write("Sexo : " +pet.getSexoPet()+"\n");
+            fw.write( endereco+"\n");
+            fw.write("Idade : " +pet.getIdadePet()+"\n");
+            fw.write("Peso : " +pet.getPesoPet()+"\n");
+            fw.write("Raça: " +pet.getRacaPet()+"\n");
+
+            fw.close();
+            out.println("Arquivo salvo" + NomeArquivo);
+
 
 
 

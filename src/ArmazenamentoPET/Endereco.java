@@ -1,4 +1,4 @@
-package CadastroPet;
+package ArmazenamentoPET;
 
 public class Endereco {
     private String numerocasa;
@@ -30,10 +30,10 @@ public class Endereco {
 
     @Override
     public String toString() {
-        return "Endereco{ " +
-                "numerocasa = " + numerocasa +
-                ", cidade = ' " + cidade + '\'' +
-                ", rua = ' " + rua + '\'' ;
+        return "Endereco : " +
+                " numerocasa = " + numerocasa +
+                " , cidade =  " + cidade + "" +
+                " , rua =  " + rua + "" ;
 
     }
 

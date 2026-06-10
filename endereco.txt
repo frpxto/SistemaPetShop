@@ -1,3 +1,0 @@
-1-Qual a rua do pet?
-2-Qual o número?
-3-Qual a cidade?
