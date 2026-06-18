@@ -29,9 +29,9 @@ bin/
 ### Mac OS ###
 .DS_Store
 
-/.idea
-/formulario.txt
-/PetsCadastrados.txt
+idea/
+/formulario/
+PetsCadastrados/
 
 
 !src/README/README.md
