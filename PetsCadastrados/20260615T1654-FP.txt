@@ -1,8 +1,0 @@
----Cadastro do Pet --- 
-Nome  CHICO
-Tipo do pet: CACHORRO
-Sexo : MACHO
-Idade : 12
-Peso : 8.0
-Raça: PIT
-Endereco :  numerocasa = 71 , cidade =  JAPUPU , rua =  JKJ
