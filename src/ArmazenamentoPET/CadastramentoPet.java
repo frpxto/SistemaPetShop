@@ -66,12 +66,14 @@ public class CadastramentoPet {
 
             System.out.println(perguntas[2]);
             String opcaosexo = scanner.nextLine();
-            if(opcaosexo.equals("MACHO")){
-                pet.setRacaPet("MACHO");
+            if(opcaosexo.equalsIgnoreCase("MACHO")){
+                pet.setSexoPet("MACHO");
 
-            }else if (opcaosexo.equals("FEMEA")){
-                pet.setRacaPet("FEMEA");
+            }else if (opcaosexo.equalsIgnoreCase("FEMEA")){
+                pet.setSexoPet("FEMEA");
 
+            }else{
+                pet.setSexoPet(NAOINFORMADO);
             }
 
 
@@ -175,17 +177,14 @@ public class CadastramentoPet {
             fw.write("Nome  " +pet.getNome()+ " Sobrenome "+ pet.getSobrenome() +"\n");
             fw.write("Tipo do pet: " +pet.getTipoPet()+"\n");
             fw.write("Sexo : " +pet.getSexoPet()+"\n");
-            fw.write( endereco+"\n");
             fw.write("Idade : " +pet.getIdadePet()+"\n");
             fw.write("Peso : " +pet.getPesoPet()+"\n");
             fw.write("Raça: " +pet.getRacaPet()+"\n");
+            out.println("--------------------------");
+            fw.write( endereco+"\n");
 
             fw.close();
             out.println("Arquivo salvo" + NomeArquivo);
-
-
-
-
 
         } catch(Exception e){
             out.println("Erro: " + e.getMessage());

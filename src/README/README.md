@@ -3,7 +3,7 @@
 ![Java](https://img.shields.io/badge/Java-21-ED8B00?logo=openjdk&logoColor=white)
 ![OOP](https://img.shields.io/badge/OOP-Java-blue)
 ![Status](https://img.shields.io/badge/status-active-success)
-![GitHub](https://img.shields.io/github/last-commit/frpxto/SistemaDePetShop.git)
+![GitHub](https://img.shields.io/github/last-commit/frpxto/SistemaPetShop.git)
 
 ## Sobre: 
 
@@ -23,7 +23,7 @@
 ## Etapas:
 - Clone o repositório:
 ```java
-git clone https://github.com/frpxto/SistemaDeLanchonete.git
+git clone https://github.com/frpxto/SistemaPetShop.git
 ```
 - Abra o projeto na IDE de sua preferência.
 - Verifique se o JDK está configurado corretamente no projeto.

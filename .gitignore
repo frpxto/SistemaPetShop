@@ -34,4 +34,4 @@ bin/
 /petsCadastrados.txt
 /endereco.txt
 
-!README.md
+!src/README/README.md
