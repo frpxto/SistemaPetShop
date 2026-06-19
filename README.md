@@ -3,7 +3,7 @@
 ![Java](https://img.shields.io/badge/Java-21-ED8B00?logo=openjdk&logoColor=white)
 ![OOP](https://img.shields.io/badge/OOP-Java-blue)
 ![Status](https://img.shields.io/badge/status-active-success)
-![GitHub](https://img.shields.io/github/last-commit/frpxto/SistemaPetShop.git)
+![GitHub](https://img.shields.io/github/last-commit/frpxto/SistemaPetShop)
 
 ## Sobre: 
 
