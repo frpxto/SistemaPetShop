@@ -1,5 +1,7 @@
 package MenuFormulario;
 
+import AlterarPerguntas.AlterarPerguntas;
+import AlterarPet.AlterarPet;
 import CriarPergunta.CriarPergunta;
 import MenuInicial.MenuInicial;
 
@@ -10,6 +12,8 @@ public class FormularioMenu {
     Scanner scanner = new Scanner(System.in);
     MenuInicial menuInicial = new MenuInicial();
     CriarPergunta criarPergunta = new CriarPergunta();
+    AlterarPerguntas alterarPerguntas = new AlterarPerguntas();
+
 
     public void formulariomenu() throws IOException {
         System.out.println("""
@@ -34,6 +38,8 @@ public class FormularioMenu {
                         criarPergunta.NovasPerguntas();
                         break;
                     case "2":
+                        alterarPerguntas.alterar();
+                        break;
 
                 }
             break;

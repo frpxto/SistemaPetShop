@@ -27,7 +27,6 @@ public class CriarPergunta {
             String[] partes = ultimalinha.split(" - ");
 
             int proximonumero = Integer.parseInt(partes[0]) + 1;
-            System.out.println("DEBUG proximonumero: " + proximonumero);
             System.out.println("Qual pergunta deseja inserir?");
             String novapergunta = scanner.nextLine();
 
