@@ -5,9 +5,15 @@
 ![Status](https://img.shields.io/badge/status-active-success)
 ![GitHub](https://img.shields.io/github/last-commit/frpxto/SistemaPetShop)
 
-## Sobre: 
+ ## Sobre:
 
- ### O projeto consiste em um sistema de gerenciamento para petshop desenvolvido em Java, responsável por realizar o controle de pets cadastrados no sistema. A aplicação permite adicionar, remover, listar e gerenciar informações dos animais de forma simples e organizada através de um menu interativo no terminal.
+O Sistema de Pet Shop é um projeto desenvolvido em Java com o objetivo de praticar 
+manipulação de arquivos `.txt` e programação orientada a objetos. A aplicação permite 
+gerenciar o cadastro de pets e personalizar o formulário de perguntas utilizado no cadastro, 
+tudo através de um menu interativo no terminal.
+
+Durante o desenvolvimento, foram aplicados conceitos como leitura e escrita de arquivos, 
+estruturas de controle, organização em classes e pacotes, e versionamento com Git e GitHub.
 
 # Instrução de Instalação:
 
@@ -34,16 +40,31 @@ git clone https://github.com/frpxto/SistemaPetShop.git
 ### Após executar o sistema, um menu interativo será exibido no terminal com as opções disponíveis para gerenciamento dos pets.O usuário poderá navegar pelo sistema digitando o número correspondente à opção desejada.
 
 ## Funcionalidades:
-### Adicionar pet
+
+### Gerenciamento de Pets :
+
+#### Adicionar pet
 - Permite cadastrar um novo pet informando dados como nome, idade, raça, tipo de animal e sexo.
-### Listar pets
+#### Listar pets
 - Exibe todos os pets cadastrados no sistema.
-### Remover pet
+#### Remover pet
 - Remove um pet cadastrado através da identificação ou nome informado.
-### Atualizar informações
+#### Atualizar informações
 - Permite editar os dados de um pet já cadastrado.
-### Encerrar sistema
-- Finaliza a execução da aplicação. 
+#### Encerrar sistema
+- Finaliza a execução da aplicação.
+
+### Gerenciamento de Formulário :
+- Acesse o menu de formulário para personalizar as perguntas do cadastro de pets.
+
+#### Criar nova pergunta
+- Permite adicionar novas perguntas ao formulário de cadastro, numeradas automaticamente a partir da pergunta 8.
+
+#### Alterar pergunta existente
+- Permite editar o texto de perguntas adicionadas pelo usuário (perguntas 8 em diante).
+
+#### Excluir pergunta existente
+- Remove uma pergunta adicionada pelo usuário. As perguntas restantes são renumeradas automaticamente.
 
 
 ## Colaboradores :
