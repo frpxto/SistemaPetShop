@@ -47,6 +47,9 @@ public class FormularioMenu {
                         excluirPerguntas.Deletar();
                         break;
                     case "4":
+                        menuInicial.Iniciar();
+                        break;
+                    case "5":
                         System.out.println("Fechando o programa");
                         System.exit(0);
                 }
